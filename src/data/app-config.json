@@ -1,0 +1,199 @@
+{
+  "site": {
+    "title": "IndeepIT Limited",
+    "description": "IndeepIT Limited — software development, marketing, and brand management. Brands that grow. Results that last.",
+    "brandName": "IndeepIT",
+    "contactEmail": "hello@indeepit.example"
+  },
+  "header": {
+    "navAriaLabel": "Main navigation",
+    "ctaLabel": "Get in Touch",
+    "openMenuAriaLabel": "Open menu",
+    "closeMenuAriaLabel": "Close menu",
+    "ctaMailto": "mailto:hello@indeepit.example",
+    "nav": [
+      { "label": "Home", "href": "#home" },
+      { "label": "About", "href": "#about" },
+      { "label": "Our Values", "href": "#values" },
+      { "label": "Services", "href": "#services" }
+    ]
+  },
+  "hero": {
+    "titleLine1": "BRANDS THAT GROW.",
+    "titleLine2": "RESULTS THAT LAST.",
+    "subtitle": "We create products that perform and grow with your business.",
+    "ctaLabel": "Get in Touch",
+    "ctaMailto": "mailto:hello@indeepit.example",
+    "badges": [
+      {
+        "label": "Software",
+        "tone": "purple",
+        "desktopSlot": "top-right"
+      },
+      {
+        "label": "Growth",
+        "tone": "blue",
+        "desktopSlot": "mid-left"
+      },
+      {
+        "label": "Product",
+        "tone": "pink",
+        "desktopSlot": "mid-bottom"
+      }
+    ]
+  },
+  "about": {
+    "sectionBadge": "About us",
+    "title": "WE BUILD THE TOOLS YOUR BUSINESS NEEDS TO GROW FASTER",
+    "descriptionBefore": "IndeepIT Limited is a software development and brand management company. We design and build digital products, strengthen brands, and support marketing with a practical, execution-first mindset. Our goal is simple: ",
+    "descriptionStrong": "so everything works together",
+    "descriptionAfter": " — technology, creative, and growth moving in the same direction."
+  },
+  "services": {
+    "label": "Services",
+    "title": "SOFTWARE DEVELOPMENT, MARKETING, AND BRAND MANAGEMENT — UNDER ONE ROOF",
+    "paragraphs": [
+      "IndeepIT Limited combines technical expertise and creative strategy to help businesses build better products and stronger brands.",
+      "Whether you need a custom platform, a go-to-market strategy, or a brand identity that stands out — we build it with you, not just for you."
+    ]
+  },
+  "values": {
+    "sectionTitle": "WHAT DRIVES US",
+    "sectionSubtitle": "Three principles behind everything we do.",
+    "cards": [
+      {
+        "id": "precision",
+        "badge": "/01",
+        "tone": "blue",
+        "title": "Precision",
+        "description": "We care about the details that compound — clear requirements, thoughtful architecture, and careful execution. Good work is rarely accidental; it is built through focus and craft."
+      },
+      {
+        "id": "ownership",
+        "badge": "/02",
+        "tone": "pink",
+        "title": "Ownership",
+        "description": "We treat your goals like our own. That means proactive communication, accountable delivery, and a bias toward solutions — especially when projects get complex."
+      },
+      {
+        "id": "impact",
+        "badge": "/03",
+        "tone": "purple",
+        "title": "Impact",
+        "description": "We measure success by what changes for your business — better products, stronger brands, and sustainable growth — not by activity for its own sake."
+      }
+    ]
+  },
+  "footer": {
+    "ctaLine1": "READY TO BUILD SOMETHING THAT LASTS?",
+    "ctaLine2": "LET'S CONNECT AND TALK!",
+    "ctaLabel": "Get in Touch",
+    "ctaMailto": "mailto:hello@indeepit.example",
+    "copyright": "© 2026 IndeepIT Limited. All rights reserved.",
+    "links": [
+      { "label": "Privacy Policy", "path": "/privacy-policy" },
+      { "label": "Terms and Conditions", "path": "/terms-and-conditions" }
+    ]
+  },
+  "mobileMenu": {
+    "dialogAriaLabel": "Navigation menu",
+    "mobileNavAriaLabel": "Mobile navigation",
+    "ctaLabel": "Get in Touch"
+  },
+  "legal": {
+    "privacy": {
+      "title": "Privacy Policy",
+      "intro": [
+        "This Privacy Policy describes how IndeepIT Limited (\"we\", \"us\") processes personal data when you visit our website or contact us.",
+        "If you have questions about this policy or your data, you can reach us using the contact details at the end of this page."
+      ],
+      "sections": [
+        {
+          "title": "Who we are",
+          "type": "text",
+          "content": [
+            "IndeepIT Limited provides software development, marketing, and brand management services. Depending on your interaction with us, we may process limited personal data to respond to enquiries and operate our website."
+          ]
+        },
+        {
+          "title": "Information we may collect",
+          "type": "list",
+          "content": [
+            "Contact details you provide (such as name and email address) when you message us.",
+            "Technical data related to website usage (such as IP address, device type, and basic analytics), where enabled.",
+            "Communication content you choose to share with us in emails or forms."
+          ]
+        },
+        {
+          "title": "How we use information",
+          "type": "text",
+          "content": [
+            "We use personal data to respond to enquiries, provide information about our services, improve website security and performance, and comply with legal obligations where applicable."
+          ]
+        },
+        {
+          "title": "Retention",
+          "type": "text",
+          "content": [
+            "We retain personal data only for as long as needed for the purposes described in this policy, unless a longer retention period is required by law."
+          ]
+        },
+        {
+          "title": "Contact",
+          "type": "mixed",
+          "intro": "For privacy-related requests, please contact us at:",
+          "content": [
+            "You can email us at hello@indeepit.example. Please include enough detail for us to verify and process your request."
+          ],
+          "isLastParagraph": true
+        }
+      ]
+    },
+    "terms": {
+      "title": "Terms and Conditions",
+      "intro": [
+        "These Terms and Conditions govern your use of the IndeepIT Limited website and any enquiries you submit through it.",
+        "By using this website, you agree to these Terms. If you do not agree, please discontinue use of the website."
+      ],
+      "sections": [
+        {
+          "title": "Website use",
+          "type": "text",
+          "content": [
+            "The content on this website is provided for general information about IndeepIT Limited and our services. We aim to keep information accurate, but we do not warrant that content is complete or up to date."
+          ]
+        },
+        {
+          "title": "No professional advice",
+          "type": "text",
+          "content": [
+            "Nothing on this website constitutes legal, financial, or other professional advice. Any engagement for services is subject to separate agreements and scoping."
+          ]
+        },
+        {
+          "title": "Intellectual property",
+          "type": "text",
+          "content": [
+            "Unless otherwise stated, website content, branding, and materials are owned by IndeepIT Limited or its licensors. You may not copy, modify, or distribute materials without permission."
+          ]
+        },
+        {
+          "title": "Limitation of liability",
+          "type": "text",
+          "content": [
+            "To the fullest extent permitted by law, IndeepIT Limited is not liable for any indirect or consequential losses arising from your use of the website."
+          ]
+        },
+        {
+          "title": "Contact",
+          "type": "mixed",
+          "intro": "Questions about these Terms:",
+          "content": [
+            "Email hello@indeepit.example and we will respond as soon as reasonably practicable."
+          ],
+          "isLastParagraph": true
+        }
+      ]
+    }
+  }
+}
