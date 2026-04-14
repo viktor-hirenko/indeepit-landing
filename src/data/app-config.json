@@ -3,14 +3,14 @@
     "title": "IndeepIT Limited",
     "description": "IndeepIT Limited — software development, marketing, and brand management. Brands that grow. Results that last.",
     "brandName": "IndeepIT",
-    "contactEmail": "hello@indeepit.example"
+    "contactEmail": "info@indeepit.co"
   },
   "header": {
     "navAriaLabel": "Main navigation",
     "ctaLabel": "Get in Touch",
     "openMenuAriaLabel": "Open menu",
     "closeMenuAriaLabel": "Close menu",
-    "ctaMailto": "mailto:hello@indeepit.example",
+    "ctaMailto": "mailto:info@indeepit.co",
     "nav": [
       { "label": "Home", "href": "#home" },
       { "label": "About", "href": "#about" },
@@ -23,7 +23,7 @@
     "titleLine2": "RESULTS THAT LAST.",
     "subtitle": "We create products that perform and grow with your business.",
     "ctaLabel": "Get in Touch",
-    "ctaMailto": "mailto:hello@indeepit.example",
+    "ctaMailto": "mailto:info@indeepit.co",
     "badges": [
       {
         "label": "Software",
@@ -87,7 +87,7 @@
     "ctaLine1": "READY TO BUILD SOMETHING THAT LASTS?",
     "ctaLine2": "LET'S CONNECT AND TALK!",
     "ctaLabel": "Get in Touch",
-    "ctaMailto": "mailto:hello@indeepit.example",
+    "ctaMailto": "mailto:info@indeepit.co",
     "copyright": "© 2026 IndeepIT Limited. All rights reserved.",
     "links": [
       { "label": "Privacy Policy", "path": "/privacy-policy" },
@@ -142,7 +142,7 @@
           "type": "mixed",
           "intro": "For privacy-related requests, please contact us at:",
           "content": [
-            "You can email us at hello@indeepit.example. Please include enough detail for us to verify and process your request."
+            "You can email us at info@indeepit.co. Please include enough detail for us to verify and process your request."
           ],
           "isLastParagraph": true
         }
@@ -188,7 +188,7 @@
           "type": "mixed",
           "intro": "Questions about these Terms:",
           "content": [
-            "Email hello@indeepit.example and we will respond as soon as reasonably practicable."
+            "Email info@indeepit.co and we will respond as soon as reasonably practicable."
           ],
           "isLastParagraph": true
         }
