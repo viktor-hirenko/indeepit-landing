@@ -66,6 +66,7 @@ const { footer } = useAppConfig()
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: to-rem(100);
 
     @include mq($until: tablet) {
       padding: to-rem(100) to-rem(80);
@@ -84,7 +85,7 @@ const { footer } = useAppConfig()
     width: 100%;
     max-width: to-rem(1040);
     text-align: center;
-    gap: to-rem(50);
+    gap: to-rem(40);
     position: relative;
     z-index: 1;
 

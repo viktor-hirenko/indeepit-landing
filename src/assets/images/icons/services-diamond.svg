@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="54" height="58" viewBox="0 0 54 58" fill="none">
+  <g filter="url(#filter0_d_services_diamond)">
+    <path
+      d="M20.2645 2.55997C23.6926 -0.853324 29.235 -0.85333 32.6631 2.55997L50.3407 20.1613C53.7898 23.5955 53.7898 29.1794 50.3407 32.6136L32.6631 50.2149C29.235 53.6282 23.6926 53.6282 20.2645 50.2149L2.58689 32.6136C-0.86224 29.1794 -0.862247 23.5955 2.58688 20.1613L20.2645 2.55997Z"
+      fill="#EEEEEE"
+    />
+    <path
+      d="M20.8357 3.13354C23.948 0.0346694 28.9802 0.0346432 32.0925 3.13354L49.7693 20.7351C52.9007 23.853 52.9007 28.9219 49.7693 32.0398L32.0925 49.6414C28.9802 52.7403 23.948 52.7402 20.8357 49.6414L3.15796 32.0398C0.0266901 28.9219 0.0266853 23.853 3.15796 20.7351L20.8357 3.13354Z"
+      stroke="#050505"
+      stroke-width="1.6185"
+    />
+  </g>
+  <defs>
+    <filter
+      id="filter0_d_services_diamond"
+      x="0"
+      y="0"
+      width="53.8525"
+      height="57.9772"
+      filterUnits="userSpaceOnUse"
+      color-interpolation-filters="sRGB"
+    >
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feColorMatrix
+        in="SourceAlpha"
+        type="matrix"
+        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+        result="hardAlpha"
+      />
+      <feOffset dx="0.924856" dy="5.20231" />
+      <feComposite in2="hardAlpha" operator="out" />
+      <feColorMatrix
+        type="matrix"
+        values="0 0 0 0 0.0196078 0 0 0 0 0.0196078 0 0 0 0 0.0196078 0 0 0 1 0"
+      />
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_services_diamond" />
+      <feBlend
+        mode="normal"
+        in="SourceGraphic"
+        in2="effect1_dropShadow_services_diamond"
+        result="shape"
+      />
+    </filter>
+  </defs>
+</svg>

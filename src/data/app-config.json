@@ -45,9 +45,8 @@
   "about": {
     "sectionBadge": "About us",
     "title": "WE BUILD THE TOOLS YOUR BUSINESS NEEDS TO GROW FASTER",
-    "descriptionBefore": "IndeepIT Limited is a software development and brand management company. We design and build digital products, strengthen brands, and support marketing with a practical, execution-first mindset. Our goal is simple: ",
-    "descriptionStrong": "so everything works together",
-    "descriptionAfter": " — technology, creative, and growth moving in the same direction."
+    "descriptionBefore": "IndeepIT Limited is a software development and brand management company that helps businesses grow through smart technology and sharp marketing. We don't just write code or run campaigns — we connect the two, ",
+    "descriptionStrong": "so everything works together"
   },
   "services": {
     "label": "Services",
@@ -66,21 +65,21 @@
         "badge": "/01",
         "tone": "blue",
         "title": "Precision",
-        "description": "We care about the details that compound — clear requirements, thoughtful architecture, and careful execution. Good work is rarely accidental; it is built through focus and craft."
+        "description": "Good software and strong brands both start with the same thing — understanding exactly what the problem is. We ask the right questions, define the right goals, and build solutions that actually fit."
       },
       {
         "id": "ownership",
         "badge": "/02",
         "tone": "pink",
         "title": "Ownership",
-        "description": "We treat your goals like our own. That means proactive communication, accountable delivery, and a bias toward solutions — especially when projects get complex."
+        "description": "We treat every project as if it's our own. That means staying accountable, keeping things moving, and never losing sight of the outcome we're working toward."
       },
       {
         "id": "impact",
         "badge": "/03",
         "tone": "purple",
         "title": "Impact",
-        "description": "We measure success by what changes for your business — better products, stronger brands, and sustainable growth — not by activity for its own sake."
+        "description": "Technology and marketing are only valuable if they create real results. We measure success by what changes for your business — not by what looks good on a report."
       }
     ]
   },

@@ -44,21 +44,20 @@ function toneClass(tone: HeroBadgeConfig['tone']): string {
     </div>
 
     <div class="hero__stage">
-      <div class="hero__badges-desktop" aria-hidden="true">
-        <span
-          v-for="badge in desktopBadges"
-          :key="`d-${badge.label}`"
-          class="hero__pill hero__pill--desktop"
-          :class="[toneClass(badge.tone), badge.slotClass]"
-        >
-          {{ badge.label }}
-        </span>
-      </div>
-
       <div class="hero__content">
         <h1 class="hero__title">
           <span class="hero__title-line">{{ hero.titleLine1 }}</span>
           <span class="hero__title-line">{{ hero.titleLine2 }}</span>
+          <span class="hero__badges-desktop" aria-hidden="true">
+            <span
+              v-for="badge in desktopBadges"
+              :key="`d-${badge.label}`"
+              class="hero__pill hero__pill--desktop"
+              :class="[toneClass(badge.tone), badge.slotClass]"
+            >
+              {{ badge.label }}
+            </span>
+          </span>
         </h1>
         <p class="hero__subtitle">{{ hero.subtitle }}</p>
         <a :href="hero.ctaMailto" class="hero__cta">
@@ -150,6 +149,7 @@ function toneClass(tone: HeroBadgeConfig['tone']): string {
     line-height: to-rem(24);
     color: var(--color-text-ui);
     box-shadow: 0 5px 0 0 #050505;
+    text-transform: none;
 
     &--mobile {
       font-size: to-rem(16);
@@ -178,32 +178,20 @@ function toneClass(tone: HeroBadgeConfig['tone']): string {
 
   &__pill--tr {
     top: to-rem(-8);
-    right: 4%;
+    right: -11px;
     transform: rotate(9deg);
-
-    @include mq($until: tablet) {
-      right: 0;
-    }
   }
 
   &__pill--ml {
-    top: 38%;
-    left: -2%;
-    transform: rotate(6deg);
-
-    @include mq($until: tablet) {
-      left: -4%;
-    }
+    top: 48%;
+    left: -12px;
+    transform: rotate(-15deg);
   }
 
   &__pill--mb {
-    bottom: 8%;
-    right: 18%;
-    transform: rotate(-5deg);
-
-    @include mq($until: tablet) {
-      right: 8%;
-    }
+    bottom: 6%;
+    right: 29%;
+    transform: rotate(8deg);
   }
 
   &__content {
@@ -216,13 +204,17 @@ function toneClass(tone: HeroBadgeConfig['tone']): string {
     gap: to-rem(50);
 
     @include mq($until: mobile) {
+      gap: to-rem(24);
+    }
+
+    @include mq($until: xs) {
       align-items: stretch;
       text-align: left;
-      gap: to-rem(24);
     }
   }
 
   &__title {
+    position: relative;
     font-family: var(--font-display);
     font-weight: 500;
     font-size: to-rem(100);
@@ -258,6 +250,7 @@ function toneClass(tone: HeroBadgeConfig['tone']): string {
   &__cta {
     display: none;
     align-items: center;
+    align-self: center;
     justify-content: center;
     padding: to-rem(12) to-rem(16);
     border-radius: var(--radius-pill);
@@ -279,7 +272,7 @@ function toneClass(tone: HeroBadgeConfig['tone']): string {
     @include mq($until: mobile) {
       display: inline-flex;
       width: 100%;
-      max-width: 100%;
+      max-width: to-rem(390);
       margin-top: to-rem(26);
     }
   }

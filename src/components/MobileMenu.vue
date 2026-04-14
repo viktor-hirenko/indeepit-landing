@@ -184,6 +184,7 @@ function handleNavigate(href: string) {
   &__nav {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: to-rem(16);
     width: 100%;
   }
@@ -193,6 +194,7 @@ function handleNavigate(href: string) {
     align-items: center;
     justify-content: center;
     width: 100%;
+    max-width: to-rem(390);
     margin: 0;
     padding: to-rem(12) to-rem(16);
     border: to-rem(1) solid var(--color-border);
@@ -219,7 +221,9 @@ function handleNavigate(href: string) {
     display: flex;
     align-items: center;
     justify-content: center;
+    align-self: center;
     width: 100%;
+    max-width: to-rem(390);
     padding: to-rem(12) to-rem(16);
     border: to-rem(1) solid var(--color-border);
     border-radius: var(--radius-pill);
@@ -263,14 +267,11 @@ function handleNavigate(href: string) {
 
 .menu-enter-active,
 .menu-leave-active {
-  transition:
-    transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 0.25s ease;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-enter-from,
 .menu-leave-to {
   transform: translateY(-100%);
-  opacity: 0;
 }
 </style>

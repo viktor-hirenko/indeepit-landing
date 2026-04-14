@@ -43,7 +43,6 @@ export interface AboutConfig {
   title: string
   descriptionBefore: string
   descriptionStrong: string
-  descriptionAfter: string
 }
 
 export interface ServicesConfig {

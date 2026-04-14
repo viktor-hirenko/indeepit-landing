@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="62" height="65" viewBox="0 0 62 65" fill="none">
+  <g filter="url(#filter0_d_services_pie)">
+    <path
+      d="M50.5858 0.0808447C24.5107 3.9075 3.89382 24.564 0.080043 50.6861C-0.620973 55.4877 3.38022 59.4441 8.23266 59.4441H50.5573C55.4097 59.4441 59.3434 55.5104 59.3434 50.658V8.23022C59.3434 3.37777 55.3869 -0.623728 50.5858 0.0808447Z"
+      fill="#EEEEEE"
+    />
+    <path
+      d="M50.7034 0.881592C54.9357 0.260481 58.5344 3.78687 58.5344 8.23022V50.658C58.5344 55.0635 54.9624 58.6345 50.5569 58.6345H8.23267C3.78968 58.6345 0.263286 55.0368 0.881104 50.8035C4.64333 25.0344 24.9828 4.65621 50.7034 0.881592Z"
+      stroke="#050505"
+      stroke-width="1.6185"
+    />
+  </g>
+  <defs>
+    <filter
+      id="filter0_d_services_pie"
+      x="0"
+      y="0"
+      width="61.8867"
+      height="64.6464"
+      filterUnits="userSpaceOnUse"
+      color-interpolation-filters="sRGB"
+    >
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feColorMatrix
+        in="SourceAlpha"
+        type="matrix"
+        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+        result="hardAlpha"
+      />
+      <feOffset dx="2.54335" dy="5.20231" />
+      <feComposite in2="hardAlpha" operator="out" />
+      <feColorMatrix
+        type="matrix"
+        values="0 0 0 0 0.0196078 0 0 0 0 0.0196078 0 0 0 0 0.0196078 0 0 0 1 0"
+      />
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_services_pie" />
+      <feBlend
+        mode="normal"
+        in="SourceGraphic"
+        in2="effect1_dropShadow_services_pie"
+        result="shape"
+      />
+    </filter>
+  </defs>
+</svg>

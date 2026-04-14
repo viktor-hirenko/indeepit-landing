@@ -10,8 +10,7 @@ const { about } = useAppConfig()
       <span class="about__badge">{{ about.sectionBadge }}</span>
       <h2 class="about__title">{{ about.title }}</h2>
       <p class="about__description">
-        {{ about.descriptionBefore }}<strong>{{ about.descriptionStrong }}</strong
-        >{{ about.descriptionAfter }}
+        {{ about.descriptionBefore }}<strong>{{ about.descriptionStrong }}</strong>
       </p>
     </div>
   </section>

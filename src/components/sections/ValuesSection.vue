@@ -35,6 +35,11 @@ function toneClass(tone: ValueBadgeTone): string {
   align-items: center;
   gap: to-rem(50);
 
+  @include mq($until: tablet) {
+    padding-left: to-rem(40);
+    padding-right: to-rem(40);
+  }
+
   @include mq($until: mobile) {
     padding: to-rem(60) to-rem(16);
     gap: to-rem(50);
@@ -93,7 +98,6 @@ function toneClass(tone: ValueBadgeTone): string {
 
     @include mq($until: mobile) {
       grid-template-columns: 1fr;
-      max-width: to-rem(480);
       gap: to-rem(16);
     }
   }
