@@ -2,7 +2,7 @@
 import { RouterLink } from 'vue-router'
 import { useAppConfig } from '@/composables/useAppConfig'
 
-const { footer } = useAppConfig()
+const { footer, contactMailto } = useAppConfig()
 </script>
 
 <template>
@@ -13,7 +13,7 @@ const { footer } = useAppConfig()
           <p class="footer__cta-line">{{ footer.ctaLine1 }}</p>
           <p class="footer__cta-line footer__cta-line--secondary">{{ footer.ctaLine2 }}</p>
         </div>
-        <a :href="footer.ctaMailto" class="footer__btn">
+        <a :href="contactMailto" class="footer__btn">
           <span class="footer__btn-label">{{ footer.ctaLabel }}</span>
           <span class="footer__btn-icon" aria-hidden="true">
             <svg

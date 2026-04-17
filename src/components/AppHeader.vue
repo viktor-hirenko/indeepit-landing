@@ -3,11 +3,13 @@ import { ref, watch, watchEffect } from 'vue'
 import { RouterLink, useRoute, useRouter } from 'vue-router'
 import MobileMenu from './MobileMenu.vue'
 import { useAppConfig } from '@/composables/useAppConfig'
+import { useSectionScrollSpy } from '@/composables/useSectionScrollSpy'
 
 const route = useRoute()
 const router = useRouter()
-const { header, site, mobileMenu } = useAppConfig()
+const { header, site, mobileMenu, contactMailto } = useAppConfig()
 
+const headerRef = ref<HTMLElement | null>(null)
 const isMobileMenuOpen = ref(false)
 const burgerRef = ref<HTMLButtonElement | null>(null)
 
@@ -21,19 +23,26 @@ function closeMenu() {
 }
 
 const navItems = header.nav
-const activeNavHref = ref<string | null>(null)
+const activeNavHref = ref<string>(navItems[0]?.href ?? '')
 
-function syncActiveNavFromRoute() {
-  if (route.path !== '/') {
-    activeNavHref.value = null
-    return
-  }
-  activeNavHref.value = route.hash || navItems[0].href
+function getHeaderHeight(): number {
+  return headerRef.value?.getBoundingClientRect().height ?? 0
 }
 
-watch(() => [route.path, route.hash] as const, syncActiveNavFromRoute, { immediate: true })
+useSectionScrollSpy({
+  route,
+  sectionHrefs: () => navItems.map(item => item.href),
+  setActiveHref: (href) => { activeNavHref.value = href },
+})
 
-function scrollTo(href: string) {
+watch(
+  () => route.path,
+  path => {
+    if (path !== '/') activeNavHref.value = ''
+  },
+)
+
+function scrollToSection(href: string) {
   activeNavHref.value = href
 
   if (route.path !== '/') {
@@ -42,14 +51,17 @@ function scrollTo(href: string) {
   }
 
   const el = document.getElementById(href.replace('#', ''))
-  if (el) {
-    el.scrollIntoView({ behavior: 'smooth' })
-  }
+  if (!el) return
+
+  const offset = getHeaderHeight()
+  const top = el.getBoundingClientRect().top + window.scrollY - offset
+
+  window.scrollTo({ top, behavior: 'smooth' })
 }
 
 function handleMobileNavigate(href: string) {
   closeMenu()
-  scrollTo(href)
+  scrollToSection(href)
 }
 
 watchEffect(() => {
@@ -58,22 +70,23 @@ watchEffect(() => {
 </script>
 
 <template>
-  <header class="header">
+  <header ref="headerRef" class="header">
     <div class="header__desktop">
       <RouterLink to="/" class="header__logo">{{ site.brandName }}</RouterLink>
       <nav class="header__nav" :aria-label="header.navAriaLabel">
-        <RouterLink
+        <button
           v-for="item in navItems"
           :key="item.label"
-          :to="{ path: '/', hash: item.href }"
+          type="button"
           class="header__nav-item"
           :class="{ 'header__nav-item--active': activeNavHref === item.href }"
           :aria-current="activeNavHref === item.href ? 'page' : undefined"
+          @click="scrollToSection(item.href)"
         >
           {{ item.label }}
-        </RouterLink>
+        </button>
       </nav>
-      <a :href="header.ctaMailto" class="header__cta">
+      <a :href="contactMailto" class="header__cta">
         <span class="header__cta-label">{{ header.ctaLabel }}</span>
         <span class="header__cta-icon" aria-hidden="true">
           <svg
@@ -118,7 +131,7 @@ watchEffect(() => {
   <MobileMenu
     :is-open="isMobileMenuOpen"
     :nav-items="navItems"
-    :cta-mailto="header.ctaMailto"
+    :cta-mailto="contactMailto"
     :menu="mobileMenu"
     :brand-name="site.brandName"
     :close-aria-label="header.closeMenuAriaLabel"

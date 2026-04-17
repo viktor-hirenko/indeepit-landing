@@ -4,10 +4,13 @@ import type { AppConfig } from '@/types/landing-config'
 
 const appConfig = appConfigRaw as AppConfig
 
+const contactMailto = `mailto:${appConfig.site.contactEmail}` as const
+
 export function useAppConfig() {
   return {
     config: appConfig,
     site: appConfig.site,
+    contactMailto,
     header: appConfig.header,
     hero: appConfig.hero,
     about: appConfig.about,

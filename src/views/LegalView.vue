@@ -16,7 +16,12 @@ const content = computed(() => (props.type === 'privacy' ? legal.privacy : legal
 
 const contactEmail = computed(() => site.contactEmail)
 
-function splitEmailSegment(text: string): { before: string; after: string } | null {
+function injectContactEmail(text: string): string {
+  return text.replace(/\{\{contactEmail\}\}/g, site.contactEmail)
+}
+
+function splitEmailSegment(raw: string): { before: string; after: string } | null {
+  const text = injectContactEmail(raw)
   const email = contactEmail.value
   if (!text.includes(email)) {
     return null
@@ -38,36 +43,42 @@ function splitEmailSegment(text: string): { before: string; after: string } | nu
 
         <div class="legal__content">
           <div class="legal__block">
-            <p v-for="(para, i) in content.intro" :key="i" class="legal__text">{{ para }}</p>
+            <p v-for="(para, i) in content.intro" :key="i" class="legal__text">{{ injectContactEmail(para) }}</p>
           </div>
 
           <div v-for="section in content.sections" :key="section.title" class="legal__block">
             <h2 class="legal__section-title">{{ section.title }}</h2>
 
             <template v-if="section.type === 'text'">
-              <p v-for="(para, i) in section.content" :key="i" class="legal__text">{{ para }}</p>
+              <p v-for="(para, i) in section.content" :key="i" class="legal__text">{{ injectContactEmail(para) }}</p>
             </template>
 
             <template v-else-if="section.type === 'list'">
               <ul class="legal__list">
-                <li v-for="(item, i) in section.content" :key="i" class="legal__list-item">{{ item }}</li>
+                <li v-for="(item, i) in section.content" :key="i" class="legal__list-item">{{
+                  injectContactEmail(item)
+                }}</li>
               </ul>
             </template>
 
             <template v-else-if="section.type === 'mixed'">
-              <p v-if="section.intro" class="legal__text">{{ section.intro }}</p>
+              <p v-if="section.intro" class="legal__text">{{ injectContactEmail(section.intro) }}</p>
               <template v-if="section.isLastParagraph">
                 <p v-for="(item, i) in section.content" :key="i" class="legal__text">
-                  <template v-if="splitEmailSegment(item)">
-                    {{ splitEmailSegment(item)?.before
-                    }}<a :href="`mailto:${contactEmail}`" class="legal__email">{{ contactEmail }}</a
-                    >{{ splitEmailSegment(item)?.after }}
+                  <template v-for="seg in [splitEmailSegment(item)]" :key="`seg-${i}`">
+                    <template v-if="seg">
+                      {{ seg.before
+                      }}<a :href="`mailto:${contactEmail}`" class="legal__email">{{ contactEmail }}</a
+                      >{{ seg.after }}
+                    </template>
+                    <template v-else>{{ injectContactEmail(item) }}</template>
                   </template>
-                  <template v-else>{{ item }}</template>
                 </p>
               </template>
               <ul v-else class="legal__list">
-                <li v-for="(item, i) in section.content" :key="i" class="legal__list-item">{{ item }}</li>
+                <li v-for="(item, i) in section.content" :key="i" class="legal__list-item">{{
+                  injectContactEmail(item)
+                }}</li>
               </ul>
             </template>
           </div>

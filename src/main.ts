@@ -37,11 +37,14 @@ const router = createRouter({
     if (to.hash && to.path === '/') {
       return new Promise(resolve => {
         let attempts = 0
-        const maxAttempts = 20
+        const maxAttempts = 30
         const tick = () => {
-          const el = document.querySelector(to.hash)
+          const el = document.querySelector<HTMLElement>(to.hash)
           if (el) {
-            resolve({ el: to.hash, behavior: 'smooth' as ScrollBehavior })
+            const header = document.querySelector<HTMLElement>('.header')
+            const headerHeight = header?.getBoundingClientRect().height ?? 0
+            const top = el.getBoundingClientRect().top + window.scrollY - headerHeight
+            resolve({ top, behavior: 'smooth' })
             return
           }
           if (attempts >= maxAttempts) {

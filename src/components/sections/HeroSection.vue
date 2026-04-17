@@ -3,7 +3,7 @@ import { computed } from 'vue'
 import { useAppConfig } from '@/composables/useAppConfig'
 import type { HeroBadgeConfig, HeroBadgeSlot } from '@/types/landing-config'
 
-const { hero } = useAppConfig()
+const { hero, contactMailto } = useAppConfig()
 
 const badgeClassMap: Record<HeroBadgeSlot, string> = {
   'top-right': 'hero__pill--tr',
@@ -60,7 +60,7 @@ function toneClass(tone: HeroBadgeConfig['tone']): string {
           </span>
         </h1>
         <p class="hero__subtitle">{{ hero.subtitle }}</p>
-        <a :href="hero.ctaMailto" class="hero__cta">
+        <a :href="contactMailto" class="hero__cta">
           <span class="hero__cta-label">{{ hero.ctaLabel }}</span>
           <span class="hero__cta-icon" aria-hidden="true">
             <svg

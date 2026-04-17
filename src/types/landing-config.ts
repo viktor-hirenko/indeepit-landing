@@ -15,7 +15,6 @@ export interface HeaderConfig {
   ctaLabel: string
   openMenuAriaLabel: string
   closeMenuAriaLabel: string
-  ctaMailto: string
   nav: NavItemConfig[]
 }
 
@@ -34,7 +33,6 @@ export interface HeroConfig {
   titleLine2: string
   subtitle: string
   ctaLabel: string
-  ctaMailto: string
   badges: HeroBadgeConfig[]
 }
 
@@ -76,7 +74,6 @@ export interface FooterConfig {
   ctaLine1: string
   ctaLine2: string
   ctaLabel: string
-  ctaMailto: string
   copyright: string
   links: FooterLinkConfig[]
 }
