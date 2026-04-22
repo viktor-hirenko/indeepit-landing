@@ -84,18 +84,36 @@ export interface MobileMenuConfig {
   ctaLabel: string
 }
 
-export type LegalBlockType = 'text' | 'list' | 'mixed'
+export type LegalBlockType = 'text' | 'list' | 'mixed' | 'subsections'
+
+export type LegalListStyle = 'disc' | 'numbered'
+
+export interface LegalSubsection {
+  subtitle: string
+  content: string[]
+}
 
 export interface LegalSectionConfig {
   title: string
   type: LegalBlockType
   content: string[]
   intro?: string
+  introLines?: string[]
+  listStyle?: LegalListStyle
+  boldPrefix?: boolean
   isLastParagraph?: boolean
+  isUnnumbered?: boolean
+  afterList?: string[]
+  secondList?: string[]
+  afterSecondList?: string[]
+  thirdList?: string[]
+  afterThirdList?: string[]
+  subsections?: LegalSubsection[]
 }
 
 export interface LegalPageConfig {
   title: string
+  lastUpdated?: string
   intro: string[]
   sections: LegalSectionConfig[]
 }

@@ -23,7 +23,7 @@ function closeMenu() {
 }
 
 const navItems = header.nav
-const activeNavHref = ref<string>(navItems[0]?.href ?? '')
+const activeNavHref = ref<string>(route.path === '/' ? (navItems[0]?.href ?? '') : '')
 
 function getHeaderHeight(): number {
   return headerRef.value?.getBoundingClientRect().height ?? 0
@@ -32,7 +32,9 @@ function getHeaderHeight(): number {
 useSectionScrollSpy({
   route,
   sectionHrefs: () => navItems.map(item => item.href),
-  setActiveHref: (href) => { activeNavHref.value = href },
+  setActiveHref: href => {
+    activeNavHref.value = href
+  },
 })
 
 watch(
@@ -40,6 +42,7 @@ watch(
   path => {
     if (path !== '/') activeNavHref.value = ''
   },
+  { immediate: true }
 )
 
 function scrollToSection(href: string) {

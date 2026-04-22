@@ -99,95 +99,350 @@
   "legal": {
     "privacy": {
       "title": "Privacy Policy",
-      "intro": [
-        "This Privacy Policy describes how IndeepIT Limited (\"we\", \"us\") processes personal data when you visit our website or contact us.",
-        "If you have questions about this policy or your data, you can reach us using the contact details at the end of this page."
-      ],
+      "lastUpdated": "Effective date: 20.04.2026",
+      "intro": [],
       "sections": [
         {
-          "title": "Who we are",
+          "title": "Introduction",
           "type": "text",
           "content": [
-            "IndeepIT Limited provides software development, marketing, and brand management services. Depending on your interaction with us, we may process limited personal data to respond to enquiries and operate our website."
+            "This Privacy Policy explains how IndeepIT Limited (\"Company\", \"we\", \"our\", \"us\") collects, uses, stores, and protects your personal data when you access or use our Website.",
+            "We are committed to handling your personal data in compliance with applicable data protection laws and regulations."
           ]
         },
         {
-          "title": "Information we may collect",
-          "type": "list",
-          "content": [
-            "Contact details you provide (such as name and email address) when you message us.",
-            "Technical data related to website usage (such as IP address, device type, and basic analytics), where enabled.",
-            "Communication content you choose to share with us in emails or forms."
-          ]
-        },
-        {
-          "title": "How we use information",
+          "title": "Definitions",
           "type": "text",
           "content": [
-            "We use personal data to respond to enquiries, provide information about our services, improve website security and performance, and comply with legal obligations where applicable."
+            "For the purposes of this Privacy Policy:",
+            "\"Company\", \"we\", \"our\", or \"us\" refers to IndeepIT Limited, a company incorporated in Hong Kong.",
+            "\"Website\" refers to the Company's official website and all associated pages and functionality.",
+            "\"User\", \"you\", or \"your\" refers to any individual or legal entity accessing or using the Website.",
+            "\"Personal Data\" means any information that identifies or can be used to identify an individual, either directly or indirectly.",
+            "\"Processing\" means any operation performed on Personal Data, including collection, storage, use, disclosure, or deletion.",
+            "\"Applicable Laws\" means all laws and regulations relating to data protection and privacy that may apply to the Company, including but not limited to the laws of Hong Kong, and, where applicable, the laws of other jurisdictions such as the European Union (including GDPR) or other regions depending on the location of the User or the nature of the services provided."
           ]
         },
         {
-          "title": "Retention",
-          "type": "text",
-          "content": [
-            "We retain personal data only for as long as needed for the purposes described in this policy, unless a longer retention period is required by law."
-          ]
-        },
-        {
-          "title": "Contact",
+          "title": "Data Subject Rights",
           "type": "mixed",
-          "intro": "For privacy-related requests, please contact us at:",
-          "content": [
-            "You can email us at {{contactEmail}}. Please include enough detail for us to verify and process your request."
+          "listStyle": "numbered",
+          "introLines": [
+            "Depending on your location and the Applicable Laws, you may have the following rights in relation to your Personal Data:"
           ],
-          "isLastParagraph": true
+          "content": [
+            "The right to access your Personal Data and obtain information about how it is processed",
+            "The right to request correction of inaccurate or incomplete Personal Data",
+            "The right to request deletion of your Personal Data (\"right to be forgotten\")",
+            "The right to restrict the processing of your Personal Data",
+            "The right to object to the processing of your Personal Data, including for direct marketing purposes",
+            "The right to data portability, allowing you to receive your Personal Data in a structured, commonly used, and machine-readable format",
+            "The right to withdraw your consent at any time where processing is based on consent",
+            "The right to lodge a complaint with a competent data protection authority"
+          ],
+          "afterList": [
+            "To exercise any of your rights, please contact us using the contact details provided below. We may request additional information to verify your identity before processing your request.",
+            "We will respond to your request"
+          ]
+        },
+        {
+          "title": "Personal Data We Collect",
+          "type": "mixed",
+          "listStyle": "numbered",
+          "boldPrefix": true,
+          "introLines": [
+            "We may collect and process different categories of Personal Data in connection with your use of the Website and your interactions with us.",
+            "This may include:"
+          ],
+          "content": [
+            "Contact Information, such as your name, email address, phone number, or other details you provide when contacting us",
+            "Business Information, such as your company name, job title, industry, or other information relevant to potential business engagement",
+            "Communication Data, including any information you provide when submitting forms, sending inquiries, or otherwise communicating with us",
+            "Technical Data, such as your IP address, browser type and version, device type, operating system, referring URLs, and other technology-related identifiers",
+            "Usage Data, including information about how you access and use the Website, such as pages visited, time spent on pages, navigation paths, and interaction patterns"
+          ],
+          "afterList": [
+            "We may also collect information automatically through cookies (please see the \"Cookies\" section below for more details).",
+            "In some cases, we may combine different types of data to improve our understanding of how the Website is used and to enhance our services.",
+            "We do not intentionally collect sensitive Personal Data (such as information relating to health, biometric data, or other special categories) unless you voluntarily provide such information. By submitting such data, you acknowledge and consent to its processing in accordance with this Privacy Policy."
+          ]
+        },
+        {
+          "title": "Purposes of Processing",
+          "type": "mixed",
+          "listStyle": "numbered",
+          "boldPrefix": true,
+          "introLines": [
+            "We process your Personal Data for specific and legitimate purposes in connection with the operation of our Website and our business activities.",
+            "These purposes include:"
+          ],
+          "content": [
+            "Communication and Inquiries: to respond to your requests, inquiries, or messages, and to maintain ongoing communication with you",
+            "Service Delivery and Business Operations: to provide, manage, and support our services, including evaluating and engaging in potential business relationships",
+            "Website Functionality and Improvement: to operate, maintain, analyze, and improve the performance, usability, and content of the Website",
+            "Security and Integrity: to monitor and protect the Website, our systems, and users from unauthorized access, fraud, or other harmful activities",
+            "Legal and Compliance Purposes: to comply with applicable legal, regulatory, and contractual obligations, and to enforce our Terms and other agreements",
+            "Business Development: to understand potential client needs, develop our offerings, and improve our marketing and business strategies"
+          ],
+          "afterList": [
+            "We will only process your Personal Data where we have a valid legal basis to do so, including where processing is necessary for our legitimate interests, for the performance of a contract, to comply with legal obligations, or based on your consent where required."
+          ]
+        },
+        {
+          "title": "Disclosure of Personal Data",
+          "type": "mixed",
+          "listStyle": "numbered",
+          "boldPrefix": true,
+          "introLines": [
+            "We do not sell, rent, or otherwise commercially disclose your Personal Data to third parties.",
+            "We may disclose your Personal Data to trusted third parties where necessary for the purposes described in this Privacy Policy, including:"
+          ],
+          "content": [
+            "Service Providers and Contractors: third-party vendors who support the operation of our Website, IT systems, hosting, analytics, communications, or other business functions",
+            "Professional Advisors: including legal, financial, and accounting advisors, where disclosure is necessary for business, compliance, or risk management purposes",
+            "Business Partners: where relevant to potential or ongoing business relationships, collaborations, or service delivery",
+            "Legal and Regulatory Authorities: where disclosure is required by applicable law, regulation, court order, or governmental request, or where necessary to protect our legal rights"
+          ],
+          "afterList": [
+            "We may also disclose Personal Data in connection with a corporate transaction, such as a merger, acquisition, restructuring, or sale of assets, where Personal Data may be transferred as part of the business.",
+            "All recipients of Personal Data are required to process such data in accordance with applicable confidentiality, contractual, and data protection obligations.",
+            "We take reasonable steps to ensure that any third parties receiving Personal Data provide an adequate level of protection consistent with Applicable Laws."
+          ]
+        },
+        {
+          "title": "Data Security",
+          "type": "text",
+          "content": [
+            "We implement appropriate technical and organizational measures designed to protect Personal Data against unauthorized or unlawful access, disclosure, alteration, loss, or destruction. These measures are proportionate to the nature of the data and the risks associated with its processing.",
+            "Such measures may include, where appropriate, access controls, secure hosting environments, encryption, internal policies, and procedures designed to safeguard Personal Data and limit access to authorized personnel only.",
+            "We take reasonable steps to ensure that any third parties processing Personal Data on our behalf implement appropriate security measures and handle such data in accordance with applicable data protection requirements.",
+            "However, no method of transmission over the internet or method of electronic storage is completely secure. While we strive to use commercially acceptable means to protect Personal Data, we cannot guarantee absolute security, and any transmission of data is at your own risk.",
+            "You are responsible for maintaining the confidentiality of any information you transmit to us and for ensuring that your own systems and devices are adequately protected."
+          ]
+        },
+        {
+          "title": "Third-Party Links and Marketing Communications",
+          "type": "text",
+          "content": [
+            "The Website may contain links to third-party websites, services, or resources that are not owned or controlled by IndeepIT Limited. We are not responsible for the content, security, or privacy practices of such third parties. We encourage you to review the privacy policies of any third-party websites you visit.",
+            "Where we engage third-party tools or platforms (such as analytics or communication tools), such providers may collect and process data in accordance with their own privacy policies.",
+            "From time to time, we may use your contact information to send you communications related to our services, updates, or business offerings, where permitted under Applicable Laws.",
+            "Where required, we will obtain your consent before sending marketing communications. You have the right to opt out of receiving such communications at any time by following the unsubscribe instructions included in our messages or by contacting us directly.",
+            "We will not send unsolicited marketing communications where prohibited by Applicable Laws."
+          ]
+        },
+        {
+          "title": "Cookies",
+          "type": "mixed",
+          "isUnnumbered": true,
+          "listStyle": "disc",
+          "boldPrefix": true,
+          "introLines": [
+            "We use cookies to enhance your experience on the Website, ensure its proper functionality, and analyze how it is used.",
+            "Cookies are small text files that are stored on your device when you visit a website. They help us recognize your device, remember your preferences, and improve the performance and usability of the Website.",
+            "We may use the following types of cookies:"
+          ],
+          "content": [
+            "Strictly Necessary Cookies: required for the operation of the Website and to enable core functionality such as security, network management, and accessibility",
+            "Analytics and Performance Cookies: used to collect information about how users interact with the Website, including pages visited, traffic sources, and usage patterns, in order to improve performance and user experience",
+            "Functionality Cookies: used to remember your preferences and settings to provide a more personalized experience",
+            "Marketing Cookies: where applicable, used to deliver relevant content or communications and to measure the effectiveness of our marketing efforts"
+          ],
+          "afterList": [
+            "Some cookies may be set by third-party providers, such as analytics or communication platforms, which may collect information in accordance with their own privacy policies.",
+            "Where required under Applicable Laws, we will obtain your consent before placing non-essential cookies on your device. You may manage or withdraw your consent at any time through your browser settings or through any cookie consent tool made available on the Website.",
+            "Please note that disabling certain cookies may affect the functionality and performance of the Website.",
+            "For more information about how we use Personal Data collected through cookies, please refer to this Privacy Policy."
+          ]
+        },
+        {
+          "title": "Data Breach Notification",
+          "type": "text",
+          "content": [
+            "We take data security seriously and have procedures in place to identify, assess, and respond to potential personal data breaches.",
+            "In the event of a data breach that is likely to result in a risk to your rights and freedoms, we will take appropriate steps to investigate, contain, and mitigate the impact of the breach.",
+            "Where required under Applicable Laws, we will notify the relevant supervisory or regulatory authorities within the prescribed timeframes.",
+            "Where the breach is likely to result in a high risk to your rights and freedoms, we will also notify affected individuals without undue delay and provide relevant information about the nature of the breach, its potential consequences, and any measures taken or proposed to address it.",
+            "We will document data breaches as required by Applicable Laws and take reasonable steps to prevent similar incidents in the future, including reviewing and improving our security measures and internal procedures."
+          ]
+        },
+        {
+          "title": "Final Provisions",
+          "type": "subsections",
+          "content": [],
+          "subsections": [
+            {
+              "subtitle": "Applicable Law",
+              "content": [
+                "This Privacy Policy shall be governed by and construed in accordance with the laws of Hong Kong.",
+                "However, where Applicable Laws of other jurisdictions apply to the processing of your Personal Data (including, where relevant, the laws of the European Union or other regions), such laws shall also be taken into account and may grant you additional rights."
+              ]
+            },
+            {
+              "subtitle": "Changes to this Privacy Policy",
+              "content": [
+                "We reserve the right to update, modify, or replace this Privacy Policy at any time at our sole discretion. Any changes will become effective upon posting on this Website, unless otherwise stated.",
+                "We encourage you to review this Privacy Policy periodically. Your continued use of the Website following any updates constitutes your acknowledgment of the changes."
+              ]
+            },
+            {
+              "subtitle": "Entire Understanding",
+              "content": [
+                "This Privacy Policy forms part of the overall legal framework governing your use of the Website, together with our [[terms]]Terms and Conditions[[/terms]]."
+              ]
+            },
+            {
+              "subtitle": "Severability",
+              "content": [
+                "If any provision of this Privacy Policy is found to be invalid, unlawful, or unenforceable under Applicable Laws, such provision shall be deemed modified to the extent necessary to make it enforceable, or, if not possible, severed from this Privacy Policy. The remaining provisions shall remain in full force and effect."
+              ]
+            },
+            {
+              "subtitle": "Contact Information",
+              "content": [
+                "If you have any questions, concerns, or requests regarding this Privacy Policy or the processing of your Personal Data, please contact us at bottom \"Keep in touch\" on the Website."
+              ]
+            }
+          ]
         }
       ]
     },
     "terms": {
       "title": "Terms and Conditions",
-      "intro": [
-        "These Terms and Conditions govern your use of the IndeepIT Limited website and any enquiries you submit through it.",
-        "By using this website, you agree to these Terms. If you do not agree, please discontinue use of the website."
-      ],
+      "lastUpdated": "Effective date: 20.04.2026",
+      "intro": [],
       "sections": [
         {
-          "title": "Website use",
+          "title": "Introduction",
           "type": "text",
+          "isUnnumbered": true,
           "content": [
-            "The content on this website is provided for general information about IndeepIT Limited and our services. We aim to keep information accurate, but we do not warrant that content is complete or up to date."
+            "Welcome to the website of IndeepIT Limited (\"Company\", \"we\", \"our\", \"us\").",
+            "These Terms and Conditions (\"Terms\") constitute a legally binding agreement between you (\"user\", \"you\", \"your\") and IndeepIT Limited regarding your access to and use of our website http://indeepit.co and any related services.",
+            "By accessing, browsing, or using this website, you acknowledge that you have read, understood, and agree to be bound by these Terms, as well as our [[privacy]]Privacy Policy[[/privacy]] (which forms an integral part of these Terms). If you do not agree to any part of these Terms or the Privacy Policy, you must not access or use this website.",
+            "We may update or revise these Terms from time to time. Your continued use of the website following any changes constitutes your acceptance of the updated Terms.",
+            "This website is intended for users who are at least 18 years old. By using this website, you represent and warrant that you meet this requirement.",
+            "If you are using this website on behalf of a company or other legal entity, you represent and warrant that you have the authority to bind such entity to these Terms."
           ]
         },
         {
-          "title": "No professional advice",
+          "title": "Definitions",
           "type": "text",
           "content": [
-            "Nothing on this website constitutes legal, financial, or other professional advice. Any engagement for services is subject to separate agreements and scoping."
+            "For the purposes of these Terms, the following definitions apply:",
+            "\"Company\", \"we\", \"our\", or \"us\" refers to IndeepIT Limited, a company incorporated in Hong Kong.",
+            "\"Website\" refers to the Company's official website and all associated pages, content, and functionality made available under its domain.",
+            "\"User\", \"you\", or \"your\" refers to any individual or legal entity accessing or using the Website.",
+            "\"Services\" refers to any services provided by the Company, including but not limited to software development, marketing services, and brand management, whether described on the Website or agreed separately.",
+            "\"Content\" refers to all materials available on the Website, including but not limited to text, graphics, logos, design, layout, software, and other intellectual property.",
+            "\"Terms\" refers to these Terms and Conditions, including any updates or modifications made from time to time.",
+            "\"Privacy Policy\" refers to the Company's separate privacy policy governing the collection and use of personal data."
           ]
         },
         {
-          "title": "Intellectual property",
+          "title": "Conditions of Use",
           "type": "text",
           "content": [
-            "Unless otherwise stated, website content, branding, and materials are owned by IndeepIT Limited or its licensors. You may not copy, modify, or distribute materials without permission."
+            "You may access and use this website for the purpose of learning about our services, engaging with our content, and contacting us regarding potential business relationships or inquiries. Any use of the website must be lawful, reasonable, and consistent with its intended purpose.",
+            "You agree not to use the website in any way that violates applicable laws or regulations, infringes upon the rights of any third party, or interferes with the normal operation, security, or accessibility of the website. This includes, without limitation, attempting to gain unauthorized access to any part of the website, its servers, or related systems, or introducing any malicious or harmful material such as viruses or other disruptive code.",
+            "You must not use the website for any unauthorized commercial exploitation, data scraping, automated data collection, or for developing competing services without our prior written consent.",
+            "We reserve the right, at our sole discretion, to suspend, restrict, or terminate your access to the website at any time, without prior notice, if we reasonably believe that you have breached these Terms or are using the website in a manner that is unlawful, harmful, or inconsistent with its intended use."
           ]
         },
         {
-          "title": "Limitation of liability",
+          "title": "Services",
           "type": "text",
           "content": [
-            "To the fullest extent permitted by law, IndeepIT Limited is not liable for any indirect or consequential losses arising from your use of the website."
+            "IndeepIT Limited provides a range of professional services, including but not limited to software development, marketing strategy.",
+            "All services are provided on a bespoke, case-by-case basis and are tailored to the specific needs and objectives of each client. The scope, deliverables, timelines, and fees for any services will be defined and agreed upon through separate written agreements, proposals, or other forms of documented communication between the Company and the client.",
+            "You acknowledge that no services are deemed to be formally agreed or commenced unless and until explicitly confirmed by the Company in writing. Any discussions, communications, or materials provided prior to such confirmation are for informational purposes only and do not constitute a binding commitment.",
+            "Where applicable, separate agreements or contracts will govern the provision of services and will take precedence over these Terms in the event of any inconsistency."
           ]
         },
         {
-          "title": "Contact",
-          "type": "mixed",
-          "intro": "Questions about these Terms:",
+          "title": "Intellectual Property",
+          "type": "text",
           "content": [
-            "Email {{contactEmail}} and we will respond as soon as reasonably practicable."
-          ],
-          "isLastParagraph": true
+            "All content and materials available on this website, including but not limited to text, graphics, logos, visual elements, design, layout, software, and any other intellectual property (collectively, the \"Content\"), are owned by or licensed to IndeepIT Limited and are protected by applicable intellectual property laws.",
+            "You are granted a limited, non-exclusive, non-transferable, and revocable right to access and use the website and its Content solely for informational and non-commercial purposes related to evaluating our services. No rights, title, or interest in any Content are transferred to you.",
+            "You must not, without our prior written consent, copy, reproduce, distribute, modify, create derivative works from, publicly display, or otherwise exploit any Content for commercial or non-commercial purposes. Any unauthorized use of the Content may violate intellectual property laws and may result in legal action.",
+            "If you believe that any Content on this website infringes your intellectual property rights, please notify us promptly by providing detailed information about the alleged infringement. Upon receiving such notice, we will review the matter and take appropriate action where necessary.",
+            "We reserve all rights not expressly granted in these Terms."
+          ]
+        },
+        {
+          "title": "Warranties",
+          "type": "text",
+          "content": [
+            "The Website and all Content are provided on an \"as is\" and \"as available\" basis, without any representations or warranties of any kind, whether express, implied, or statutory.",
+            "To the fullest extent permitted under applicable law, IndeepIT Limited disclaims all warranties, including but not limited to any implied warranties of merchantability, fitness for a particular purpose, non-infringement, and accuracy.",
+            "We do not warrant or guarantee that the Website will be uninterrupted, secure, or error-free, that any defects will be corrected, or that the Website or its servers are free from viruses, malware, or other harmful components.",
+            "We make no representations or warranties regarding the accuracy, completeness, reliability, or timeliness of any Content available on the Website. Any reliance you place on such Content is strictly at your own risk.",
+            "No information or materials obtained through the Website shall create any warranty not expressly stated in these Terms."
+          ]
+        },
+        {
+          "title": "Limitation of Liability",
+          "type": "text",
+          "content": [
+            "To the fullest extent permitted under applicable laws of Hong Kong, IndeepIT Limited, its directors, employees, affiliates, partners, and licensors shall not be liable for any direct, indirect, incidental, consequential, special, or punitive damages arising out of or in connection with your access to, use of, or inability to use the Website or any Content.",
+            "This includes, without limitation, any loss of profits, revenue, business opportunities, data, goodwill, or anticipated savings, even if we have been advised of the possibility of such damages.",
+            "We shall not be liable for any damages resulting from errors, omissions, interruptions, defects, delays in operation or transmission, system failures, or the presence of viruses or other harmful components.",
+            "To the extent that any liability cannot be excluded under applicable law, our total aggregate liability to you for any claims arising out of or relating to the use of the Website shall be limited to the maximum extent permitted by law.",
+            "Nothing in these Terms shall exclude or limit liability where such exclusion or limitation is not permitted under applicable law.",
+            "No failure or delay by the Company in exercising any right, power, or remedy under these Terms shall operate as a waiver of that right or any other rights. Any waiver must be in writing to be effective."
+          ]
+        },
+        {
+          "title": "Final Provisions",
+          "type": "subsections",
+          "content": [],
+          "subsections": [
+            {
+              "subtitle": "Governing Law and Jurisdiction",
+              "content": [
+                "These Terms and any dispute, claim, or controversy arising out of or in connection with them, including their existence, validity, interpretation, performance, or termination, shall be governed by and construed in accordance with the laws of Hong Kong.",
+                "You agree that the courts of Hong Kong shall have exclusive jurisdiction to settle any such dispute or claim."
+              ]
+            },
+            {
+              "subtitle": "Changes to Terms",
+              "content": [
+                "We reserve the right to update, modify, or replace these Terms at any time at our sole discretion. Any changes will become effective upon posting on this Website, unless otherwise stated.",
+                "It is your responsibility to review these Terms periodically. Your continued access to or use of the Website following the posting of any changes constitutes your acceptance of those changes."
+              ]
+            },
+            {
+              "subtitle": "Entire Agreement",
+              "content": [
+                "These Terms, together with our [[privacy]]Privacy Policy[[/privacy]], constitute the entire agreement between you and IndeepIT Limited regarding the use of the Website and supersede any prior agreements, understandings, or communications, whether written or oral."
+              ]
+            },
+            {
+              "subtitle": "Severability",
+              "content": [
+                "If any provision of these Terms is found to be invalid, illegal, or unenforceable under applicable law, such provision shall be deemed modified to the extent necessary to make it enforceable, or if not possible, severed from these Terms. The remaining provisions shall remain in full force and effect."
+              ]
+            },
+            {
+              "subtitle": "Waiver",
+              "content": [
+                "No failure or delay by the Company in exercising any right, power, or remedy under these Terms shall operate as a waiver of that right or any other rights. Any waiver must be in writing to be effective."
+              ]
+            },
+            {
+              "subtitle": "Assignment",
+              "content": [
+                "You may not assign or transfer any of your rights or obligations under these Terms without our prior written consent. We may assign or transfer our rights and obligations under these Terms without restriction."
+              ]
+            },
+            {
+              "subtitle": "Contact Information",
+              "content": [
+                "If you have any questions, concerns, or requests regarding these Terms, please contact us at the bottom \"Keep in touch\"."
+              ]
+            }
+          ]
         }
       ]
     }

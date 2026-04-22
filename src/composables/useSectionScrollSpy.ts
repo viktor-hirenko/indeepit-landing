@@ -48,7 +48,10 @@ export function useSectionScrollSpy(options: SectionScrollSpyOptions): void {
     const elapsed = performance.now() - lastCommitAt
     pendingHref = href
     if (elapsed >= minGap) {
-      if (trailingTimer !== null) { clearTimeout(trailingTimer); trailingTimer = null }
+      if (trailingTimer !== null) {
+        clearTimeout(trailingTimer)
+        trailingTimer = null
+      }
       options.setActiveHref(href)
       lastCommitAt = performance.now()
       pendingHref = null
@@ -59,7 +62,10 @@ export function useSectionScrollSpy(options: SectionScrollSpyOptions): void {
   }
 
   function disconnect(): void {
-    if (trailingTimer !== null) { clearTimeout(trailingTimer); trailingTimer = null }
+    if (trailingTimer !== null) {
+      clearTimeout(trailingTimer)
+      trailingTimer = null
+    }
     pendingHref = null
     observer?.disconnect()
     observer = null
@@ -72,7 +78,8 @@ export function useSectionScrollSpy(options: SectionScrollSpyOptions): void {
 
     lastCommitAt = performance.now()
 
-    const elements = options.sectionHrefs()
+    const elements = options
+      .sectionHrefs()
       .map(h => document.getElementById(h.replace(/^#/, '')))
       .filter((el): el is HTMLElement => el !== null)
 
@@ -84,12 +91,12 @@ export function useSectionScrollSpy(options: SectionScrollSpyOptions): void {
       entries => {
         for (const e of entries) latestByTarget.set(e.target, e)
         const visible = [...latestByTarget.values()].filter(
-          e => e.isIntersecting && e.intersectionRatio > 0 && e.target.id,
+          e => e.isIntersecting && e.intersectionRatio > 0 && e.target.id
         )
         const href = pickActiveHref(visible)
         if (href) scheduleSetActiveHref(href)
       },
-      { root: null, rootMargin, threshold: [0, 0.1, 0.25, 0.5, 0.75, 1] },
+      { root: null, rootMargin, threshold: [0, 0.1, 0.25, 0.5, 0.75, 1] }
     )
 
     for (const el of elements) observer.observe(el)
@@ -116,10 +123,12 @@ export function useSectionScrollSpy(options: SectionScrollSpyOptions): void {
       disconnect()
       if (path === '/') scheduleConnect()
     },
-    { flush: 'post' },
+    { flush: 'post' }
   )
 
   scheduleConnect()
 
-  onBeforeUnmount(() => { disconnect() })
+  onBeforeUnmount(() => {
+    disconnect()
+  })
 }
